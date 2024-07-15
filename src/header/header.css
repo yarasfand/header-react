@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.Header-contain {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    position: static;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    background-color: transparent;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.header-subopt:hover {
+    border-radius: 40px;
+    background-color: #000;
+}
+
+.header-subopt-para:hover {
+    color: #fff;
+}
+
+.Contact-header {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.75rem 1.75rem;
+    font-size: 14px;
+    --tw-bg-opacity: 0.9;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(38 38 38 / var(--tw-text-opacity));
+    transition-property: color, background-color, border-color,
+        text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    flex-direction: row;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: black;
+    background-color: #F2F3EE;
+}
+
+.Contact-header:hover {
+    background-color: #fff;
+}
+.lang-select {
+    display: flex;
+    border: 2px solid #fff;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.55rem 1rem;
+    font-size: 14px;
+    --tw-bg-opacity: 0.9;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    transition-property: color, background-color, border-color,
+        text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    flex-direction: row;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.navbar {
+    max-width: 85rem;
+}
+
+.nav-opt {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-opt::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out, width 0.2s ease-in-out;
+}
+
+.nav-opt:hover::after {
+    width: 100%;
+    background-color: #fff;
+}
+
+.nav-opt::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out, width 0.2s ease-in-out;
+}
+
+.nav-opt:hover::after,
+.nav-opt-underline::after {
+    width: 100%;
+    background-color: #fff;
+}
+
+.nav-opt-underline {
+    color: #fff;
+}
+
+
+@media (max-width: 1023px) {
+    .navbar {
+        background-color: black;
+    }
+
+    .company-Name {
+        color: #fff;
+        font-size: 0.8rem;
+        padding-left: 0.5rem;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        color: black;
+        font-size: 2rem;
+        /* Increased font size */
+        border-radius: 50%;
+        /* Make the background circular */
+        background-color: #F2F3EE;
+        padding: 0.5rem;
+        /* Add padding to make the circle larger */
+        width: 2rem;
+        /* Define width for the circle */
+        height: 2rem;
+        /* Define height for the circle */
+        display: flex;
+        /* Center the icon inside the circle */
+        align-items: center;
+        /* Center the icon inside the circle */
+        justify-content: center;
+        /* Center the icon inside the circle */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+}
+
+@keyframes slideIn {
+    0% {
+        transform: scaleX(0) scaleY(0);
+        transform-origin: top right;
+    }
+
+    50% {
+        transform: scaleX(1) scaleY(1);
+        transform-origin: top right;
+    }
+
+    100% {
+        transform: scaleX(1) scaleY(1);
+        transform-origin: top right;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: scaleX(1) scaleY(1);
+        transform-origin: top right;
+    }
+
+    50% {
+        transform: scaleX(1) scaleY(1);
+        transform-origin: top right;
+    }
+
+    100% {
+        transform: scaleX(0) scaleY(0);
+        transform-origin: top right;
+    }
+}
+
+.mobile-menu-enter {
+    animation: slideIn 0.5s forwards;
+}
+
+.mobile-menu-exit {
+    animation: slideOut 0.5s forwards;
+}
+
+.menu-close-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(73, 73, 73);
+    border-radius: 9999px;
+    padding: 10px;
+}
+
+.menu-close-icon {
+    color: #fff;
+
+}
+
+.mobile-menu-options {
+    letter-spacing: -0.03em;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+.mobile-menu-buttons{
+    width: 100%;
+    display: flex;
+}
+
+.mobile-menu-button-a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #2a2a2a;
+    border-radius: 9999px;
+    margin: 1rem 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.mobile-menu-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.3rem;
+    transition: background-color 0.2s ease-in-out;
+}
+.mobile-menu-icons-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.3rem;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 50%; /* Perfect circle */
+    height: 3rem; /* Adjust size as needed */
+    width: 3rem; /* Adjust size as needed */
+    color: #fff;
+    text-decoration: none; /* Remove underline */
+}
+
+.mobile-options-title{
+    margin-top: 1.4rem;
+}
+
